@@ -20,7 +20,10 @@ const Products = () => {
       return (
         <div key={product.div} className="card">
           <Link to={`${product.id}`}>
-            <img src={product.image} alt="" />
+            <div>
+              {" "}
+              <img src={product.image} alt="" />
+            </div>
             <h2>{product.title}</h2>
             <p> {product.description.substring(0, 100) + "...."}</p>
           </Link>
